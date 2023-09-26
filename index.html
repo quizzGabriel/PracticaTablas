@@ -3,9 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tablas</title>
 </head>
 <body>
-    
+
+    <h1>A basic form</h1>
+    <h2>Form elements here</h2>
+    <h3>Other HTML is fine, too</h3>
+
+        <input type="text" id="fname" name="fname" value="lalala"><br><br>
+        <input type="text" id="lname" name="lname" value="gogogogo"><br><br>
+
+
+    <h1>Ejemplo de formulario sencillo con contenedor</h1>
+
+    <form action="Encuesta.php">
+        <fieldset>
+        <legend>Datos personales</legend>
+            <label for="Nombre">Nombre</label>
+            <input type="text" id="Nom" name="nombre"><br><br>
+            <label for="Direccion">Direccion</label>
+            <input type="text" id="Dir" name="direccion"><br><br> 
+            <label for="Telefono">Telefono</label>
+            <input type="text" id="Tel" name="telefono"><br><br>
+            <label for="Seleccion">Seleccion</label>
+                <select id="color" name="color">
+                    <option value="rojo">rojo</option>
+                    <option value="amarillo">amarillo</option>
+                    <option value="azul">azul</option>
+                    <option value="verde">verde</option>
+                    <br>
+                </select><br><br>
+
+            <label for="clave">Clave</label>
+            <input type="password" id="contraseña" name="pasword"><br><br>
+        </fieldset>
+    </form>
+     
+    <fieldset>
+    <legend>Texto de multiples lineas</legend>
+    <form action="/mensaje.php">
+        <textarea name="message" rows="5" cols="10">
+        </textarea>
+        <br><br>
+    </fieldset>
+    </form>
+
+
+    <form action="/opcion.php">
+        <fieldset>
+        <legend>Selecciona una opcion</legend>
+            <input type="checkbox" id="opcion1" name="Armonia y Amistad" value="Armonia y Amistad">
+            <label for="opcion1"> Armonia y amistad</label><br>
+            <input type="checkbox" id="opcion2" name="Dinero" value="Dinero">
+            <label for="opcion2"> Dinero</label><br>
+            <input type="checkbox" id="opcion3" name="Paz mundial" value="Paz mundial">
+            <label for="opcion3"> Paz mundial</label><br><br>
+        </fieldset>
+    </form>
+
+
+    <form action="forma_unica.php">
+        <fieldset>
+        <h5>Seleccion unica</h5>
+        <input type="radio" id="opc1" name="gusto" value="MUCHO">
+        <label for="opc1">mucho</label><br>
+        <input type="radio" id="opc2" name="gusto" value="MUCHO_MAS">
+        <label for="opc2">mucho mas</label><br>
+        <input type="radio" id="opc3" name="gusto" value="MUCHO_MUCHO_MAS">
+        <label for="opc3">mucho mucho mas</label>
+        </fieldset>
+    </form> 
+
 </body>
 </html>
