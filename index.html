@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+
 <body>
+<h1> principio</h1>
+
+
+<input type="text" id="fname" name="fname" value="juan"><br>
+<br>
+<br>
+<input type="text" id="lname" name="lname" value="carlos"><br><br>
+
     
+<h2>HTML Forms</h2>
+<fieldset> 
+<legend> datos personales </legend>
+<form action="/action_page.php">
+  <label for="fname">First :</label><br>
+  <input type="text" id="fname" name="fname" value="luis gabriel"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="fname">phone :</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">email:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form> </fieldset>
+
+<h2> escoge un perro</h2>
+<form action="/action_page.php">
+    <label for="perros">escoge un perro:</label>
+    <select id="perros" name="perros">
+      <option value="husky">husky</option>
+      <option value="maltes">husky</option>
+      <option value="pomeramiam">pomeramiam</option>
+      <option value="labrador">labrador</option>
+    </select>
+    <input type="submit">
+  </form>
+
+  <form action="/action_page.php">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="pwd">Password:</label><br>
+    <input type="password" id="pwd" name="pwd"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <h1>area de texto</h1>
+
+  <form action="/action_page.php">
+    <p><label for="comentario">Review of W3Schools:</label></p>
+    <textarea id="comentario" name="comentario" rows="17" cols="50">escribe tu comentario</textarea>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+
+<h2>una</h2>
+
+<p>escoge un color:</p>
+
+<form>
+  <input type="radio" id="html" name="color" value="HTML">
+  <label for="html">Rojo</label><br>
+  <input type="radio" id="css" name="color" value="CSS">
+  <label for="css">Amarillo</label><br>
+  <input type="radio" id="css" name="color" value="CSS">
+  <label for="css">Verde</label><br>
+</form> 
+
+<h2>varias</h2>
+<p>que mascota tienes</p>
+
+<form action="/action_page.php">
+  <input type="checkbox" id="mascota1" name="mascota1" value="perro">
+  <label for="mascota1"> tengo perro</label><br>
+  <input type="checkbox" id="mascota2" name="mascota2" value="gato">
+  <label for="mascota2"> tengo gato</label><br>
+  <input type="checkbox" id="mascota3" name="mascota3" value="caballo">
+  <label for="mascota3"> tengo caballo</label><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+
+
 </body>
 </html>
